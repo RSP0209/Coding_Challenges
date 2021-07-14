@@ -1,0 +1,23 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+#define MOD 1000000007;
+#define ll long long
+
+int main()
+{
+    int x;
+    cin>>x;
+    float y;
+    cin>>y;
+    float z = x + 0.5;
+    if(x%5 != 0 || x==0)
+        cout<<y;
+    else if (z>y)
+        cout<<y;
+    else
+    {
+        z = y - x - 0.5;
+        cout<<z;
+    }
+}
